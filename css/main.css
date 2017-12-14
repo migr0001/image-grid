@@ -23,6 +23,7 @@ body {
 }
 
 img {
+  display: block;
   width: 100%;
   float: left;
 }
@@ -71,10 +72,12 @@ img:nth-child(2) {
 
 @media only screen and (min-width: 60em) {
 
+  img:first-child {
+    width: 66.6666%;
+  }
 
-}
-
-@media only screen and (min-width: 90em) {
-
+  img:last-child {
+    display: inline-block;
+  }
 
 }
