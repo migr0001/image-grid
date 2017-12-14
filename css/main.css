@@ -19,11 +19,12 @@ html {
 
 body {
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
 }
 
 img {
   width: 100%;
+  float: left;
 }
 
 img:last-child {
@@ -38,12 +39,29 @@ img:nth-child(2) {
 @media only screen and (min-width: 25em) {
 
   img {
+    width: 50%;
     display: inline-block;
+  }
+
+  img:first-child {
+    width: 100%;
+  }
+
+  img:nth-child(2) {
+    display: inline;
+  }
+
+  img:last-child {
+    display: inline;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
+
+  img {
+    width: 33.3333%;
+  }
 
   img:last-child {
     display: none;
@@ -54,6 +72,9 @@ img:nth-child(2) {
 @media only screen and (min-width: 60em) {
 
 
-  }
+}
+
+@media only screen and (min-width: 90em) {
+
 
 }
